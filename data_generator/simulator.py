@@ -128,3 +128,14 @@ if __name__ == "__main__":
     simulator = ATMSimulator()
 
     simulator.run()
+
+
+#     simulator.py
+#    ├── calls transaction_generator
+#    └── calls health_generator
+
+
+# So from the user's perspective:
+# One simulator is running.
+# Internally:
+# Two independent event generators are operating.
