@@ -1,50 +1,26 @@
-\# Real-Time ATM Monitoring \& Alerting System
+# 🏦 Project: Real-Time ATM Monitoring System
 
+## The problem we're solving
 
+Imagine a bank has hundreds or thousands of ATMs.  
+The bank wants to know in real time:
 
-A real-time ATM infrastructure monitoring and alerting system built to detect operational issues before they significantly impact customers.
-
-
-
-\## Objective
-
-
-
-The system will continuously process ATM events and detect issues such as:
-
-
-
-\- Low cash levels
-
-\- ATM downtime
-
-\- Hardware failures
-
-\- High transaction failure rates
-
-\- Network problems
-
-
-
-\## Planned Technology
-
-
-
-\- Python
-
-\- Apache Kafka
-
-\- Apache Spark Structured Streaming
-
-\- MongoDB
-
-\- Docker
-
-
-
-\## Project Status
-
-
-
-🚧 Under Development
-
+* Is an ATM online?
+* Did an ATM go offline?
+* Is an ATM running out of cash?
+* Are there network/hardware problems?
+* Are transactions suddenly failing?
+* Is there unusual transaction activity?
+* Which ATM needs attention right now, rather than after someone checks a report?
+---
+* We're building:
+* ATM Event
+* ↓
+* Kafka
+* ↓
+* Real-Time Processing
+* ↓
+* Detect Important Situations
+* ↓
+* Alert
+---
