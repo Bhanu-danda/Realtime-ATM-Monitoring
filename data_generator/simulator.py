@@ -139,3 +139,31 @@ if __name__ == "__main__":
 # One simulator is running.
 # Internally:
 # Two independent event generators are operating.
+
+
+
+    #                  10 ATMs
+    #                    │
+    #                    ▼
+    #              Initial State
+    #                    │
+    #                    ▼
+    #               Orchestrator
+    #                    │
+    #         ┌──────────┴──────────┐
+    #         ▼                     ▼
+    #    Transactions             Health
+    #         │                     │
+    #         │                     │
+    #    5 event types         6 event types
+    #         │                     │
+    #         └──────────┬──────────┘
+    #                    ▼
+    #             Shared ATM State
+    #                    │
+    #                    ▼
+    #            Continuous Events
+    #                    │
+    #                    ▼
+    #                  KAFKA
+    #                 (NEXT)
